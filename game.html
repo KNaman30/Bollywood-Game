@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollywood Movie Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bollywood Movie Guessing Game</h1>
+        <p>Player 1, enter the name of the film. Player 2, you will guess the characters.</p>
+        <img src="https://www.slidescarnival.com/wp-content/uploads/Burgundy-and-Gold-Illustrative-Guess-The-Movie-1.jpg.optimal.jpg" alt="Film Reel">
+    </div>
+    <div id="startScreen">
+        <label for="film">Player 1: Enter the name of the film: </label>
+        <input type="text" id="film" />
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="game">
+        <div id="maskedFilm" class="colorful-text"></div>
+        <div>
+            <label for="guess">Player 2: Guess Character: </label>
+            <input type="text" id="guess" maxlength="1" />
+            <button onclick="makeGuess()">Guess</button>
+        </div>
+        <div id="chances"></div>
+        <div id="message"></div>
+        <button id="restartButton" onclick="restartGame()">Restart Game</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

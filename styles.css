@@ -1,0 +1,143 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://www.sheknows.com/wp-content/uploads/2018/08/film-reels_horiz_ngzatb.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #000; /* Black color for heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Reduced shadow */
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #000; /* Black color for subheading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+}
+
+#startScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#game {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#maskedFilm {
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+#guess {
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+#chances, #message {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restartButton:hover {
+    background-color: #e0a800;
+}
+
+#restartButton:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+#message {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+#message.win {
+    color: #28a745;
+}
+
+img {
+    width: 150px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.colorful-text {
+    font-size: 24px;
+    color: #ff0066;
+    text-shadow: 2px 2px #ffe066;
+}
