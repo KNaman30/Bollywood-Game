@@ -10,7 +10,7 @@ SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), V);
 int main()
 {
 	char film[100],dfilm[100],ch;
-	int i,t=9,found;
+	int i,t=20,found;
 	printf("Enter the name of film:");
 	i=-1;
 	do
